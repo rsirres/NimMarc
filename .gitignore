@@ -1,0 +1,6 @@
+# Ignore binaries
+reader
+test/simple
+
+# Ignore datasets
+data/**

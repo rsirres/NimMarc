@@ -1,6 +1,5 @@
 import strutils
 import strformat
-import constant
 
 
 type

@@ -7,35 +7,36 @@ Some toy benchmarks on OSX with large marc files show that this implementation i
 
 ## Basic Usage Example
 
-1. Save the following code snippet in file: `my_reader.nim`
+Save the following code snippet in file: `my_reader.nim`
 
-``` nim
-import reader
-import record
+    ``` nim
+    import reader
+    import record
 
-var r = newReader("<path_to_marc>/my_file.marc")
+    var r = newReader("<path_to_marc>/my_file.marc")
 
-for record in iter(r):
-    echo record.toString()
-```
+    for record in iter(r):
+        echo record.toString()
+    ```
 
-2. Run the cmd in terminal/cmd:
-``` bash
-nim c -r my_reader.nim
-```
+Run the cmd in terminal/cmd:
 
-## Looking for marc file to test this library ?
+    ``` bash
+    nim c -r my_reader.nim
+    ```
 
-``` bash
-cd data
-wget https://www.lib.umich.edu/files/open-access-marc/umich_created_20151120.marc.gz
-```
+## Looking for marc file to test this library?
 
-## TODO
+    ``` bash
+    cd data
+    wget https://www.lib.umich.edu/files/open-access-marc/umich_created_20151120.marc.gz
+    ```
 
-- [] Add simple cli
-- [] Support different encodings (e.g. latin-1)
-- [] Support marc8 encoding
-- [] Support XML serialization
-- [] Support JSON serialization
-- [] Support (sub-)field access like [marc-x](https://github.com/ubleipzig/marcx)
+# TODO 
+
+- [ ] Add simple cli
+- [ ] Support different encodings (e.g. latin-1)
+- [ ] Support marc8 encoding
+- [ ] Support XML serialization
+- [ ] Support JSON serialization
+- [ ] Support (sub-)field access like [marc-x](https://github.com/ubleipzig/marcx)
